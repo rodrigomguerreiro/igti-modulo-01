@@ -1,0 +1,130 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Rodrigo">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="title">
+    IGTI - Desafio Módulo 1
+    <span class="span-title">Consumindo API Random User</span>
+    <span class="span-title">Bootcamp Fullstack Developer</span>
+  </div>
+
+  <div class="search">
+    <form onsubmit="event.preventDefault();" id="form">
+      <div class="pesq">Pesquisa de usuários</div>
+      <div class="inner-form" id="teste">
+        <div class="input-field first-wrap">
+          <div class="svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+              </path>
+            </svg>
+          </div>
+          <input id="search" type="text" placeholder="Digite aqui..." />
+
+        </div>
+        <div class="input-field second-wrap">
+          <button class="btn-search" type="button" id="btnClear" disabled="disabled">Limpar</button>
+        </div>
+      </div>
+      <span class="info">ex. João, Marcela...</span>
+    </form>
+  </div>
+
+  <div class="message" id="message"></div>
+
+  <div class="row-cards">
+    <div class="card">
+      <h3 class="textCountUser" id="textCountUser"></h3>
+      <div id="tabUsers"></div>
+    </div>
+    <div class="card" id="insight">
+      <header class="menu__sub">
+        <h2 class="textCountUser">Estatísticas</h2>
+        <span class="menu__date" id="date"></span>
+      </header>
+
+      <section class="posts">
+        <div class="post active">
+          <header class="post__header">
+            <span class="post__title">Sexo Masculino</span>
+            <span class="post__percent">
+              <span class="up-arrow" id="percMale"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="5">
+                  <path d="M0 5l5-5 5 5" fill="#20C792" fill-rule="evenodd"></path>
+                </svg></span>%</span>
+          </header>
+          <div class="post__body">
+            <span class="post__numb" id="male"></span>
+          </div>
+        </div>
+        <div class="post active">
+          <header class="post__header">
+            <span class="post__title">Sexo Feminino</span>
+            <span class="post__percent">
+              <span class="up-arrow" id="percFemale">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5">
+                  <path d="M0 5l5-5 5 5" fill="#20C792" fill-rule="evenodd"></path>
+                </svg>
+              </span>%</span>
+          </header>
+          <div class="post__body">
+            <span class="post__numb" id="female"></span>
+          </div>
+        </div>
+        <div class="post active">
+          <header class="post__header">
+            <span class="post__title">Soma Idades</span>
+            <span class="post__percent">
+              <span class="up-arrow" id="percSumAge"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="5">
+                  <!-- <path d="M0 5l5-5 5 5" fill="#20C792" fill-rule="evenodd"></path> -->
+                </svg></span></span>
+          </header>
+          <div class="post__body">
+            <span class="post__numb" id="sumAge"></span>
+          </div>
+        </div>
+        <div class="post active">
+          <header class="post__header">
+            <span class="post__title">Média Idade</span>
+            <span class="post__percent">
+              <span class="up-arrow" id="percMedia"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="5">
+                  <!-- <path d="M0 5l5-5 5 5" fill="#20C792" fill-rule="evenodd"></path> -->
+                </svg></span></span>
+          </header>
+          <div class="post__body">
+            <span class="post__numb" id="media"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="posts1">
+        IGTI - Desafio Módulo 1
+
+        <ul class="desc">
+          <li>
+            Consumindo API - Random User
+          </li>
+          <li>
+            Utilizando Array Methods
+          </li>
+          <li>
+            Manipulando elementos do DOM
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
